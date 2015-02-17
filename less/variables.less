@@ -1,0 +1,71 @@
+/* ===========================================================
+ * Common Variables
+ * bla bla bla bla bla bla
+ * =========================================================== */
+ 
+/* Editing Variables
+---------------------------------------------------------------------------*/
+@base-color: #4D9C2B; /* Verde */
+
+/* Colors
+---------------------------------------------------------------------------*/
+
+/* == Scaffolding == */
+@body-bg:                @grey-lightest;
+@text-color:             @grey;
+
+/* == Brand Colors == */
+@brand-darker:			darken(@base-color, 10%);
+@brand-dark:			darken(@base-color, 5%);
+@brand-principal:		@base-color;
+@brand-light:			lighten(@base-color, 5%);
+@brand-lighter:			lighten(@base-color, 10%);
+@brand-lightest:		fade(@base-color, 10%);
+
+/* == Complementary Colors == */
+@comp-darker: darken(spin(@base-color, 180), 10%); 
+@comp-dark: darken(spin(@base-color, 180), 5%); 
+@comp-principal: spin(@base-color, 180);
+@comp-light: lighten(spin(@base-color, 180), 5%); 
+@comp-lighter: lighten(spin(@base-color, 180), 10%);
+
+/* == Gray Colors == */
+@grey-darker:			lighten(#000, 13.5%); // #222
+@grey-dark:				lighten(#000, 20%);   // #333
+@grey:					lighten(#000, 33.5%); // #555
+@grey-medium:			lighten(#000, 60%);   // #999
+@grey-light:			lighten(#000, 75%);   // #
+@grey-lighter:			lighten(#000, 93.5%); // #eee
+@grey-lightest:			lighten(#000, 96%);   // #f5f5f5
+
+/* == Call to action Colors == */
+@action-color:			#DE0031;
+@action-darker:			darken(@action-color, 10%);
+@action-dark:			darken(@action-color, 5%);
+@action-principal:		@action-color;
+@action-light:			lighten(@action-color, 5%);
+@action-lighter:		lighten(@action-color, 10%);
+@action-lightest:		fade(@action-color, 10%);
+
+/* == Link Colors == */
+@link-color:             @brand-principal;
+@link-hover-color:       darken(@link-color, 15%);
+
+
+/* Typography
+---------------------------------------------------------------------------*/
+@font-family-base: 'Raleway', sans-serif;
+@font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif: Georgia, "Times New Roman", Times, serif;
+@font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+
+/* Z-index
+---------------------------------------------------------------------------*/
+@zindex-navbar:            1000;
+@zindex-dropdown:          1000;
+@zindex-popover:           1010;
+@zindex-tooltip:           1030;
+@zindex-navbar-fixed:      1030;
+@zindex-modal-background:  1040;
+@zindex-modal:             1050;

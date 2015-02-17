@@ -1,0 +1,57 @@
+/* ===========================================================
+ * Navigation
+ * Usar navigation Site Styles
+ * =========================================================== */
+ 
+@import 'variables.less';
+@import 'mixins.less';
+
+ /* Scalfolding
+---------------------------------------------------------------------------*/
+body, html {
+	/*height: 100%;
+	overflow: hidden;*/
+	
+}
+
+.content {
+	/*  margin-top: 100px; Altura Header 
+	height: 100%; */
+}
+
+.module {
+	/*float: left;
+	margin-bottom: 20px;
+	width: 100%;*/
+	padding: 100px 0;
+}
+
+/* Navigation
+---------------------------------------------------------------------------*/
+.navbar {	
+	/*.background(#fff,0.9);*/
+	background: transparent; 
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	margin: 0;	
+	width: 100%;
+	z-index: 5;
+	
+	&.affix {
+		.background-white(0.9);
+		.box-shadow-black(0,5,10,0.02);
+	}
+		
+	&.affix-top {
+		bottom: 0;
+		position: absolute;		
+	}
+	
+	a { outline: none; }
+}
+
+/* Footer
+---------------------------------------------------------------------------*/
+footer {}
+

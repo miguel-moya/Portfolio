@@ -1,0 +1,205 @@
+/* ===========================================================
+ * LESS Mixins
+ * Lots of Love Mixins library for LESS
+ * =========================================================== */
+
+.font-family-base {
+	font-family: @font-family-base;
+	-webkit-text-stroke: 0.3px;
+}
+
+.font-size (@percentage) when (@percentage > 100) {
+	font-size: @percentage;
+	line-height: inherit;
+}
+
+.font-size (@percentage) when (@percentage < 100) {
+	font-size: @percentage;
+	line-height: (@percentage + 20);
+}
+
+.text-shadow (@x-axis: 1, @y-axis: 1, @blur: 1, @color: @principal ) {
+  text-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" @color;
+}
+
+.text-shadow-black (@x-axis: 1, @y-axis: 1, @blur: 1, @alpha: 0.5) {
+  text-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(0, 0, 0, @alpha);
+}
+
+.text-shadow-white (@x-axis: 1, @y-axis: 1, @blur: 1, @alpha: 0.5) {
+  text-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(255, 255, 255, @alpha);
+}
+
+.box-sizing(@borderBox: border-box) {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.box-shadow-black (@x-axis: 0, @y-axis: 0, @blur: 3, @alpha: 0.2) {
+  -webkit-box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(0, 0, 0, @alpha);
+  box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(0, 0, 0, @alpha);
+}
+.box-shadow-black (@x-axis, @y-axis, @blur, @alpha, @set) {
+  -webkit-box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(0, 0, 0, @alpha) @set;
+  -moz-box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(0, 0, 0, @alpha) @set;
+  box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(0, 0, 0, @alpha) @set;
+}
+
+.box-shadow-white (@x-axis: 0, @y-axis: 0, @blur: 3, @alpha: 1) {
+  -webkit-box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(255, 255, 255, @alpha);
+  -moz-box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(255, 255, 255, @alpha);
+  box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(255, 255, 255, @alpha);
+}
+.box-shadow-white (@x-axis, @y-axis, @blur, @alpha, @set) {
+  -webkit-box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(255, 255, 255, @alpha) @set;
+  -moz-box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(255, 255, 255, @alpha) @set;
+  box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" rgba(255, 255, 255, @alpha) @set;
+}
+
+.box-shadow (@x-axis: 0, @y-axis: 0, @blur: 3, @color: @principal) {
+  -webkit-box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" @color;
+  -moz-box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" @color;
+  box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" @color;
+}
+.box-shadow (@x-axis, @y-axis, @blur, @color, @set) {
+  -webkit-box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" @color @set;
+  -moz-box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" @color @set;
+  box-shadow: ~"@{x-axis}px" ~"@{y-axis}px" ~"@{blur}px" @color @set;
+}
+
+.opacity (@opacity: 0.9) {
+	@opperc: @opacity * 100;
+	-khtml-opacity: @opacity;
+	-ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+	-moz-opacity: @opacity;
+	-webkit-opacity: @opacity;
+	opacity: @opacity;
+	filter: ~"alpha(opacity=@{opperc})";
+	zoom: 1;
+}
+
+.background (@color, @alpha: 0.90) {
+	@myred:red(@color);
+	@mygreen:green(@color);
+	@myblue:blue(@color);
+	@myargb:argb(rgba(@myred,@mygreen,@myblue,@alpha));
+	background-color: transparent;
+	background-color: rgba(@myred,@mygreen,@myblue,@alpha) ;
+	filter: ~"progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='@{myargb}', EndColorStr='@{myargb}')"; 
+}
+
+.background-black (@alpha: 0.94) {
+	background-color: (#222);
+	background-color: rgba(34, 34, 34, @alpha); 
+}
+
+.background-white (@alpha: 0.9) {
+	background-color: (#fff);
+	background-color: rgba(255, 255, 255, @alpha); 
+}
+
+.rounded (@radius: 5) {
+	-webkit-border-radius: ~"@{radius}px";
+	-moz-border-radius: ~"@{radius}px";
+	border-radius: ~"@{radius}px";
+}
+
+.border-radius (@radiusTL, @radiusTR, @radiusBR, @radiusBL ) {
+	-webkit-border-top-left-radius: ~"@{radiusTL}px";
+	-webkit-border-top-right-radius: ~"@{radiusTR}px";
+	-webkit-border-bottom-right-radius: ~"@{radiusBR}px";
+	-webkit-border-bottom-left-radius: ~"@{radiusBL}px";
+	-moz-border-radius-topleft: ~"@{radiusTL}px";
+	-moz-border-radius-topright: ~"@{radiusTR}px";
+	-moz-border-radius-bottomright: ~"@{radiusBR}px";
+	-moz-border-radius-bottomleft: ~"@{radiusBL}px";
+	border-top-left-radius: ~"@{radiusTL}px";
+	border-top-right-radius: ~"@{radiusTR}px";
+	border-bottom-right-radius: ~"@{radiusBR}px";
+	border-bottom-left-radius: ~"@{radiusBL}px";
+}
+
+.gradient (@color1, @posicion1, @color2, @posicion2, @colorBase) {
+	background: @colorBase;
+	background: -moz-linear-gradient(top,  @color1 ~"@{posicion1}%", @color2 ~"@{posicion2}%");
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(~"@{posicion1}%",@color1), color-stop(~"@{posicion2}%",@color2));
+	background: -webkit-linear-gradient(top,  @color1 ~"@{posicion1}%",@color2 ~"@{posicion2}%");
+	background: -o-linear-gradient(top,  @color1 ~"@{posicion1}%",@color2 ~"@{posicion2}%");
+	background: -ms-linear-gradient(top,  @color1 ~"@{posicion1}%",@color2 ~"@{posicion2}%");
+	background: linear-gradient(to bottom,  @color1 ~"@{posicion1}%",@color2 ~"@{posicion2}%");
+}
+
+.gradient (@color1, @posicion1, @color2, @posicion2, @color3, @posicion3, @colorBase) {
+	background: @colorBase;
+	background: -moz-linear-gradient(top,  @color1 ~"@{posicion1}%", @color2 ~"@{posicion2}%", @color3 ~"@{posicion3}%");
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(~"@{posicion1}%",@color1), color-stop(~"@{posicion2}%",@color2), color-stop(~"@{posicion3}%",@color3));
+	background: -webkit-linear-gradient(top,  @color1 ~"@{posicion1}%",@color2 ~"@{posicion2}%",@color3 ~"@{posicion3}%");
+	background: -o-linear-gradient(top,  @color1 ~"@{posicion1}%",@color2 ~"@{posicion2}%",@color3 ~"@{posicion3}%");
+	background: -ms-linear-gradient(top,  @color1 ~"@{posicion1}%",@color2 ~"@{posicion2}%",@color3 ~"@{posicion3}%");
+	background: linear-gradient(to bottom,  @color1 ~"@{posicion1}%",@color2 ~"@{posicion2}%",@color3 ~"@{posicion3}%");
+}
+
+.gradient (@color1, @posicion1, @color2, @posicion2, @color3, @posicion3, @color4, @posicion4, @colorBase) {
+	background: @colorBase;
+	background: -moz-linear-gradient(top,  @color1 ~"@{posicion1}%", @color2 ~"@{posicion2}%", @color3 ~"@{posicion3}%", @color4 ~"@{posicion4}%");
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(~"@{posicion1}%",@color1), color-stop(~"@{posicion2}%",@color2), color-stop(~"@{posicion3}%",@color3), color-stop(~"@{posicion4}%",@color4));
+	background: -webkit-linear-gradient(top,  @color1 ~"@{posicion1}%",@color2 ~"@{posicion2}%",@color3 ~"@{posicion3}%",@color4 ~"@{posicion4}%");
+	background: -o-linear-gradient(top,  @color1 ~"@{posicion1}%",@color2 ~"@{posicion2}%",@color3 ~"@{posicion3}%",@color4 ~"@{posicion4}%");
+	background: -ms-linear-gradient(top,  @color1 ~"@{posicion1}%",@color2 ~"@{posicion2}%",@color3 ~"@{posicion3}%",@color4 ~"@{posicion4}%");
+	background: linear-gradient(to bottom,  @color1 ~"@{posicion1}%",@color2 ~"@{posicion2}%",@color3 ~"@{posicion3}%",@color4 ~"@{posicion4}%");
+}
+
+.background-size (@bs-width, @bs-height) {
+	background-size: ~"@{bs-width}px" ~"@{bs-height}px";
+	-moz-background-size: ~"@{bs-width}px" ~"@{bs-height}px";
+	-webkit-background-size: ~"@{bs-width}px" ~"@{bs-height}px";
+	-o-background-size: ~"@{bs-width}px" ~"@{bs-height}px";	
+}
+
+/*.background-hd(@path, @w: auto, @h: auto) {
+  background-image: url("@{path}");
+  @bg2x_path: ~`@{path}.split('.').slice(0, @{path}.split('.').length - 1).join(".") + "@2x" + "." + @{path}.split('.')[@{path}.split('.').length - 1]`;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+	only screen and (-o-min-device-pixel-ratio: 13/10),
+	only screen and (min-resolution: 120dpi) {
+    background-image: url("@{bg2x_path}");
+    background-size: ~"@{w}px" ~"@{h}px";
+  }  
+}*/
+
+.padding-x (@padding) {
+	padding-left: ~"@{padding}px";
+	padding-right: ~"@{padding}px";
+}
+
+.padding-y (@padding) {
+	padding-bottom: ~"@{padding}px";
+	padding-top: ~"@{padding}px";
+}
+
+.margin-x (@margin) {
+	margin-left: ~"@{margin}px";
+	margin-right: ~"@{margin}px";
+}
+
+.margin-y (@margin) {
+	margin-bottom: ~"@{margin}px";
+	margin-top: ~"@{margin}px";
+}
+
+.image-size (@height, @width) {
+	height: ~"@{height}px";
+	width: ~"@{width}px";
+}
+
+.multiple-columns (@count, @gap) {
+	-moz-column-count: @count;
+	-moz-column-gap: ~"@{gap}px";
+	-webkit-column-count: @count;
+	-webkit-column-gap: ~"@{gap}px";
+	column-count: @count;
+	column-gap: ~"@{gap}px"; 
+}
