@@ -1,0 +1,48 @@
+// ===========================================================
+// Portfolio
+// My Styles
+// ===========================================================
+ 
+// Imports
+@import (once) "_variables.less";
+@import (reference) "_mixins.less";
+
+// ===========================================================
+// Begin Styles
+// ===========================================================
+
+
+// General
+// ===========================================================
+body {
+	background-color: @body-bg;
+	color: @text-color;
+	font-family: @font-family-sans-serif;
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+
+// Navbar
+// ===========================================================
+.navbar {	
+	/*.background(#fff,0.9);*/
+	background: transparent; 
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	margin: 0;	
+	width: 100%;
+	z-index: 5;
+	
+	&.affix {
+		.background-white(0.9);
+		.box-shadow-black(0,5,10,0.02);
+	}
+		
+	&.affix-top {
+		bottom: 0;
+		position: absolute;		
+	}
+	
+	a { outline: none; }
+}

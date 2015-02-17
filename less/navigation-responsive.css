@@ -1,4 +1,0 @@
-/* Editing Variables
----------------------------------------------------------------------------*/
-.font-family-base{font-family:'Raleway',sans-serif;-webkit-text-stroke:.3px}@media (min-width: 1600px){.container{ width:1564px}}@media (min-width: 1400px){.container{ width:1364px}}@media (min-width: 992px){.block-desktop{ display:block}}@media (max-width: 991px){.content{ margin-top:0}.container{width:100%;padding:0 4%}}@media (max-width: 480px){.col-xxs-12{ width:100%}.navbar{bottom:0!important;position:fixed!important}}
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */

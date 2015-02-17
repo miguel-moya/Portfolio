@@ -1,0 +1,42 @@
+/* ===========================================================
+ * App
+ * My Constructor
+ * =========================================================== */
+/* ===========================================================
+ * Common Variables
+ * bla bla bla bla bla bla
+ * =========================================================== */
+/* Editing Variables
+---------------------------------------------------------------------------*/
+/* Verde */
+/* Colors
+---------------------------------------------------------------------------*/
+/* == Scaffolding == */
+/* == Brand Colors == */
+/* == Complementary Colors == */
+/* == Gray Colors == */
+/* == Call to action Colors == */
+/* == Link Colors == */
+/* Typography
+---------------------------------------------------------------------------*/
+/* Z-index
+---------------------------------------------------------------------------*/
+/* ===========================================================
+ * LESS Mixins
+ * Lots of Love Mixins library for LESS
+ * =========================================================== */
+.font-family-base {
+  font-family: 'Raleway', sans-serif;
+  -webkit-text-stroke: 0.3px;
+}
+/*.background-hd(@path, @w: auto, @h: auto) {
+  background-image: url("@{path}");
+  @bg2x_path: ~`@{path}.split('.').slice(0, @{path}.split('.').length - 1).join(".") + "@2x" + "." + @{path}.split('.')[@{path}.split('.').length - 1]`;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+	only screen and (-o-min-device-pixel-ratio: 13/10),
+	only screen and (min-resolution: 120dpi) {
+    background-image: url("@{bg2x_path}");
+    background-size: ~"@{w}px" ~"@{h}px";
+  }  
+}*/
