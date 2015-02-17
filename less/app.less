@@ -1,11 +1,12 @@
 // ===========================================================
 // Portfolio
-// My Styles
+// My Styles v1.0
 // ===========================================================
  
 // Imports
 @import (once) "_variables.less";
 @import (reference) "_mixins.less";
+@import "_normalize.less";
 
 // ===========================================================
 // Begin Styles
@@ -14,13 +15,35 @@
 
 // General
 // ===========================================================
+html {
+	font-size: 62.5%;
+}
+
 body {
 	background-color: @body-bg;
 	color: @text-color;
 	font-family: @font-family-sans-serif;
-	font-size: 13px;
-	font-size: 1.3rem;
+	// Add mixin
+	font-size: 16px;
+	font-size: 1.6rem;
+	// Add mixin
+	line-height: 26px;
+	line-height: 2.6rem;
 }
+
+// Navigation
+header {
+	//background: transparent; 
+	background-color: yellow;
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	margin: 0;	
+	width: 100%;
+	z-index: 5;
+}
+
+nav { width: 70%; float: right; }
 
 // Navbar
 // ===========================================================
