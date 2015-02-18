@@ -1,0 +1,483 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"list-s",
+				"list-style-type"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"wd",
+				"width"
+			],
+			[
+				"fu",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/4. Simple Tooltips/tooltip.html",
+			"settings":
+			{
+				"buffer_size": 18586,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/4. Simple Tooltips/less/main.less",
+			"settings":
+			{
+				"buffer_size": 2505,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 274.0,
+		"history":
+		[
+			"git clone https://github.com/gcollazo/BrowserRefresh-Sublime.git \"Browser Refresh\"",
+			"git clone https://github.com/miguel-moya/Portfolio.git \"Browser Refresh\"",
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/miguel.moya/Proyectos/Portfolio",
+		"/C/Users/miguel.moya/Proyectos/Portfolio/less"
+	],
+	"file_history":
+	[
+		"/C/Users/miguel.moya/Proyectos/Portfolio/less/_mixins.less",
+		"/C/Users/miguel.moya/Proyectos/Portfolio/index.html",
+		"/C/Users/miguel.moya/Proyectos/Portfolio/less/app.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/clubsenior/main.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/clubsenior/fonts.less",
+		"/E/Workspaces/Dev/Responsive/assets/css/fonts/font-raleway.css",
+		"/E/Workspaces/Dev/Responsive/assets/css/fonts/font-mavenpro.css",
+		"/E/Workspaces/Dev/Responsive/assets/css/fonts/font-meteo.css",
+		"/C/Users/miguel.moya/Desktop/webfontkit-20150218-035001/stylesheet.css",
+		"/C/Users/miguel.moya/Proyectos/Portfolio/less/main.less",
+		"/C/Users/miguel.moya/Proyectos/Portfolio/less/navigation.less",
+		"/C/Users/miguel.moya/Proyectos/Portfolio/less/main-responsive.less",
+		"/C/Users/miguel.moya/Proyectos/Portfolio/less/navigation-responsive.less",
+		"/C/Users/miguel.moya/Proyectos/Portfolio/less/navigation-responsive.css",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/others/_deals.less",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Logitravel TV/Web/index.html",
+		"/C/Users/miguel.moya/Desktop/Logitravel/less/app/_app.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/qa/deals.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/others/constructor_deals.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/others/constructor_deals.less",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Logitravel TV/Web/less/main.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/flights/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/flights/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/flights/_flights_searchers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/flights/constructor_searchers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/qa/campaigns.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/others/tv.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/others/_variables.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/others/constructor_campaigns.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/others/_variables.less",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/3. Go to Top Link/v3/less/main.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/others/constructor_campaigns.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/others/constructor.less",
+		"/C/Users/miguel.moya/Desktop/nieve.html",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/4. Simple Tooltips/js/main.js",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/5. Pasos Reserva/less/main.less",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/4. Simple Tooltips/less/main.less",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/3. Go to Top Link/v3/index.html",
+		"/C/Users/miguel.moya/Desktop/OWL/owl.carousel/assets/css/responsive.css",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/hotels/_hotels_searchers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/hotels/constructor_searchers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/flights/constructor_availability.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/hotels/constructor_searchers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/hotels/constructor_hoteldetail.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/hotels/constructor_hoteldetail.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/hotels/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/hotels/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/qa/family-resorts.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/ski/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/ski/constructor_offers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/ski/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/ski/constructor_offers.less",
+		"/C/Users/miguel.moya/Desktop/prueba/index.html",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/family-resorts/_portaventura.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/ski/_ski_offers.less",
+		"/C/Users/miguel.moya/Desktop/owl_new.less",
+		"/C/Users/miguel.moya/Desktop/prueba/less/main.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/family-resorts/constructor_disney.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/family-resorts/constructor_disney.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/family-resorts/constructor_portaventura.less",
+		"/C/Users/MIGUEL~1.MOY/AppData/Local/Temp/pasos-v3.html",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/home.less",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/3. Go to Top Link/v3/js/main.js",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/3. Go to Top Link/v3/less/_mixins.less",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/3. Go to Top Link/v3/css/main.css",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/3. Go to Top Link/less/main.less",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/3. Go to Top Link/js/main.js",
+		"/C/Users/miguel.moya/Desktop/3. Go to Top Link/index.html",
+		"/C/Users/miguel.moya/Desktop/3. Go to Top Link/js/main.js",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/disney/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/disney/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/travels/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/travels/constructor_offers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/travels/_travels_offers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/travels/constructor.less",
+		"/C/Users/miguel.moya/Desktop/go_to_top/js/main.js",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/New Front/Logitravel/Formacion/html/css/1.0.min.css",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/New Front/Logitravel/Formacion/html/less/_mixins.less",
+		"/C/Users/miguel.moya/Desktop/go_to_top/index.html",
+		"/C/Users/miguel.moya/Desktop/go_to_top/less/main.less",
+		"/C/Users/miguel.moya/Desktop/go_to_top/less/_mixins.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/_variables.less",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/New Front/Logitravel/Formacion/html/less/_main.less",
+		"/C/Users/miguel.moya/Desktop/go_to_top/less/_variables.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/_disney.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/_app.less",
+		"/C/Users/miguel.moya/Desktop/go_to_top/css/main.css",
+		"/C/Users/miguel.moya/Desktop/rotate_text/index.html",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/flights/constructor_searcher.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/activities/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/activities/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/qa/activities.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/flights/_flights_offers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/activities/constructor_offers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/flights/constructor_offers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/flights/constructor_offers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/flights/_flights.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/activities/constructor_offers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/activities/_activities_offers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/circuits/constructor_offers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/fonts/_font-logitravel.less",
+		"/C/Users/miguel.moya/Desktop/REM/flights.less",
+		"/C/Users/miguel.moya/Desktop/REM/mixins.less",
+		"/C/Users/miguel.moya/Desktop/REM/common.less",
+		"/C/Users/miguel.moya/Desktop/REM/mixins2015.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/fonts/_font-facilities.less",
+		"//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Iconos/Font-Logitravel/font-logitravel_2015-01/style.css",
+		"/E/Workspaces/Dev/Responsive/assets/less/fonts/font-facilities_old.less",
+		"/C/Users/miguel.moya/Desktop/Tooltip/tooltip.html",
+		"/C/Users/miguel.moya/Desktop/REM/modules.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/fonts.less",
+		"/C/Users/miguel.moya/Proyectos/Cajas Producto/index.html",
+		"/C/Users/miguel.moya/Desktop/REM/navigation.less",
+		"/C/Users/miguel.moya/Desktop/REM/font-awesome.less",
+		"/C/Users/miguel.moya/Desktop/REM/font-settings.less",
+		"/C/Users/miguel.moya/Desktop/REM/font-logitravel.min.css",
+		"/C/Users/miguel.moya/Desktop/REM/modules",
+		"/C/Users/miguel.moya/Desktop/bootstrap-3.0.1-dist/dist/css/bootstrap.css",
+		"/E/Workspaces/Dev/Responsive/assets/less/app/circuits/_circuits_offers.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/qa/circuits.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/brochures/regions/1559/_region.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/brochures/regions/1559/_variables.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/brochures/regions/1599/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/brochures/regions/1599/_variables.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/destinations/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/logitravel/business/cruises/constructor.less",
+		"/E/Workspaces/Dev/Responsive/assets/less/label/traveltool/business/cruises/constructor.less"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"fontraleway",
+			"/Raleway-",
+			";\n",
+			"80",
+			"priceTooltip2",
+			"mscdn.toolfactory.net:88",
+			"; ",
+			"gradient",
+			"moreItems",
+			"1px",
+			"border-left",
+			"rgba",
+			"sidebarLeftOcioCiudad",
+			".box-shadow;",
+			"logoP",
+			"box-shadow",
+			".hola",
+			".holita",
+			"holita",
+			".png",
+			"prueba",
+			"hola",
+			"box-s",
+			"mobile-header",
+			"-transform",
+			"transform",
+			"btn-mobile",
+			"iconHolder",
+			"encoding"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"font/raleway",
+			"raleway/Raleway-",
+			"productTooltip",
+			"pre.cdn.logitravel.com"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/4. Simple Tooltips/tooltip.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18586,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15329,
+								15294
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1047.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "//toolfactory.net/logitravel/disenyo/26_RESPONSIVE/Proyectos/4. Simple Tooltips/less/main.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2505,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1185,
+								1185
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "portfolio.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 219.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -211,16 +211,41 @@ body {
 }
 header {
   background-color: yellow;
+  height: 80px;
+  line-height: 80px;
   border: none;
   border-radius: 0;
   color: #fff;
   margin: 0;
   width: 100%;
   z-index: 5;
+  position: absolute;
+  bottom: 0;
+  transition: height 0.3s ease 0s;
 }
-nav {
-  width: 70%;
+header.sticky {
+  position: fixed;
+  bottom: inherit;
+  top: 0;
+  height: 50px;
+  line-height: 50px;
+}
+.site-navigation {
   float: right;
+}
+.site-navigation h3 {
+  display: none;
+}
+.site-navigation ul {
+  list-style-type: none;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+}
+.site-navigation li {
+  display: table-cell;
+  padding: 0 20px;
+  padding: 0 2rem;
 }
 .navbar {
   /*.background(#fff,0.9);*/
@@ -245,4 +270,15 @@ nav {
 }
 .navbar a {
   outline: none;
+}
+#home {
+  background-color: #333;
+}
+#home:before,
+#home:after {
+  display: table;
+  content: " ";
+}
+#home:after {
+  clear: both;
 }

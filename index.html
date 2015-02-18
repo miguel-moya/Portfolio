@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Titulo Portfolio2</title>
+		<title>Titulo Portfolio22222222222222222222222222222222222222s2</title>
 
 		<!-- Styles -->
 		<link href="css/app.css" rel="stylesheet" type='text/css'>
@@ -25,9 +25,9 @@
 				<img src="#" alt="My Portfolio Logo" />
 			</a>
 
-			<nav role="navigation">
+			<nav role="navigation" class="site-navigation">
 				<h3>Site Navigation</h3>
-				<ul class="nav clearfix">
+				<ul class="clearfix">
 					<li class="active"><a href="#about" title="Sobre mi">Sobre mi</a></li>
 					<li><a href="#manifiesto" title="Manifiesto">Manifiesto</a></li>
 					<li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
@@ -38,7 +38,7 @@
 		</header>
 
 		<!-- Home -->
-		<section id="home">
+		<section id="home" class="clearfix">
 			<h2>Prueba</h2>
 		</section>
 		
@@ -94,9 +94,12 @@
 		================================================== -->
 
 		<script>
+
 			$(document).ready(function(){
+				var windowHeight = parseInt($(window).height());
+
 				// #home igual de grande que la altura de pantalla
-        		$('#home').css('height', parseInt($(window).height()) + 'px');
+        		$('#home').css('height', windowHeight + 'px');
 				
 				// #principal-nav affix
 				var navHeight = parseFloat($('#principal-nav').outerHeight(true));
@@ -113,7 +116,20 @@
 				
 				//scrollToContent('.container');		
             });
-			
+
+			//==  Funcion scrollToContent ==//
+			$(window).scroll(function() {
+				var windowHeight = parseInt($(window).height());
+				var headerHeight = parseFloat($('header').outerHeight(true));
+				var stickyHeight = windowHeight - headerHeight;
+				if ($(this).scrollTop() > stickyHeight){  
+				    $('header').addClass("sticky");
+				  }
+				  else{
+				    $('header').removeClass("sticky");
+				  }
+				});
+				
 			// items nav scrollToContent
 			$("nav li a, #logo").click(function (e) {
 				e.preventDefault();

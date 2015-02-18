@@ -3,6 +3,20 @@
  * Lots of Love Mixins library for LESS
  * =========================================================== */
 
+ // Clearfix
+// --------------------------------------------------
+// For clearing floats like a boss h5bp.com/q
+.clearfix() {
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
 .font-family-base {
 	font-family: @font-family-base;
 	-webkit-text-stroke: 0.3px;

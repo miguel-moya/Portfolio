@@ -35,15 +35,51 @@ body {
 header {
 	//background: transparent; 
 	background-color: yellow;
+	height: 80px;
+	line-height: 80px;
 	border: none;
 	border-radius: 0;
 	color: #fff;
 	margin: 0;	
 	width: 100%;
 	z-index: 5;
+	position: absolute;
+	bottom: 0;
+	transition: height 0.3s ease 0s;
+
+	&.sticky {
+		position: fixed;
+		bottom: inherit;
+		top: 0;
+		height: 50px;
+		line-height: 50px;
+	}
 }
 
-nav { width: 70%; float: right; }
+.site-navigation {
+	float: right;	
+
+	h3 { display: none; }
+
+	ul {
+		list-style-type: none;
+		display: table;
+		table-layout: fixed;
+		margin: 0;
+	}
+
+	li {
+		display: table-cell;
+		padding: 0 20px;
+		padding: 0 2rem;
+	}
+
+}
+
+
+
+
+
 
 // Navbar
 // ===========================================================
@@ -68,4 +104,13 @@ nav { width: 70%; float: right; }
 	}
 	
 	a { outline: none; }
+}
+
+
+// Section - Home
+// ===========================================================
+#home {
+	background-color: #333;
+
+	.clearfix;
 }
