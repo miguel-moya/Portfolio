@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Titulo Portfolio22222222222222222222222222222222222222s2</title>
+		<title>Site Title</title>
 
 		<!-- Styles -->
 		<link href="css/app.css" rel="stylesheet" type='text/css'>
@@ -20,12 +20,13 @@
 	</head>
 	<body>
 
-		<header>
-			<a href="/" title="Return to the homepage" id="logo">
-				<img src="#" alt="My Portfolio Logo" />
+		<header class="header-site" id="header-site">
+			<h1>Portfolio de Miguel Ángel Moyá</h1>
+			<a href="#home" title="Return to the homepage" id="logo">
+				<img src="#" alt="Site Name Home Page" />
 			</a>
 
-			<nav role="navigation" class="site-navigation">
+			<nav role="navigation" class="navigation-site" id="navigation-site">
 				<h3>Site Navigation</h3>
 				<ul class="clearfix">
 					<li class="active"><a href="#about" title="Sobre mi">Sobre mi</a></li>
@@ -38,8 +39,8 @@
 		</header>
 
 		<!-- Home -->
-		<section id="home" class="clearfix">
-			<h2>Prueba</h2>
+		<section id="home" class="home-section">
+			<span><h3> Morbi eu risus rutrum diam facilisis fermentum. Aenean vel nulla est.</h3></span>
 		</section>
 		
 		<!-- About -->
@@ -86,62 +87,8 @@
 			aqui el footer
 		</footer>
 
-		<!-- Bootstrap and Jquery Core
-		================================================== -->
+		<!-- Javascript -->
 		<script src="js/jquery.js"></script>
-
-		<!-- Others JS
-		================================================== -->
-
-		<script>
-
-			$(document).ready(function(){
-				var windowHeight = parseInt($(window).height());
-
-				// #home igual de grande que la altura de pantalla
-        		$('#home').css('height', windowHeight + 'px');
-				
-				// #principal-nav affix
-				var navHeight = parseFloat($('#principal-nav').outerHeight(true));
-				$('#principal-nav').affix({						
-					  offset: {
-						top: $('#home').height() - navHeight
-					  }
-				});
-
-				// random Classes to Jumbotron				
-				var classes = ["paso", "ensayo"];
-				$('#home').addClass(classes[~~(Math.random()*classes.length)]);
-
-				
-				//scrollToContent('.container');		
-            });
-
-			//==  Funcion scrollToContent ==//
-			$(window).scroll(function() {
-				var windowHeight = parseInt($(window).height());
-				var headerHeight = parseFloat($('header').outerHeight(true));
-				var stickyHeight = windowHeight - headerHeight;
-				if ($(this).scrollTop() > stickyHeight){  
-				    $('header').addClass("sticky");
-				  }
-				  else{
-				    $('header').removeClass("sticky");
-				  }
-				});
-				
-			// items nav scrollToContent
-			$("nav li a, #logo").click(function (e) {
-				e.preventDefault();
-				var sectionID = $(this).attr('href');
-				scrollToContent(sectionID);				
-			});
-			
-			//==  Funcion scrollToContent ==//
-			function scrollToContent(aid) {
-				$('html,body').animate({ scrollTop: $(aid).offset().top }, 'slow');
-			}
-
-        </script>
+		<script src="js/main.min.js"></script>
 	</body>
 </html>

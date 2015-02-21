@@ -12,7 +12,6 @@
 // Begin Styles
 // ===========================================================
 
-
 // General
 // ===========================================================
 html {
@@ -24,6 +23,7 @@ body {
 	color: @text-color;
 	font-family: @font-family-sans-serif;
 	// Add mixin
+	// .clc-once(font-size, 16);
 	font-size: 16px;
 	font-size: 1.6rem;
 	// Add mixin
@@ -31,53 +31,123 @@ body {
 	line-height: 2.6rem;
 }
 
-// Navigation
-header {
+h1 { .visuallyhidden; }
+
+
+// Header & Navigation
+// ===========================================================
+.header-site {
 	//background: transparent; 
-	background-color: yellow;
+	//background-color: yellow;
+	border-radius: 0;
+	border: none;
+	bottom: 0;
+	color: #fff;
 	height: 80px;
 	line-height: 80px;
-	border: none;
-	border-radius: 0;
-	color: #fff;
 	margin: 0;	
+	position: absolute;
+	// Add mixin
+	transition: all 0.3s ease 0s;
 	width: 100%;
 	z-index: 5;
-	position: absolute;
-	bottom: 0;
-	transition: height 0.3s ease 0s;
 
 	&.sticky {
-		position: fixed;
+		//mixin
+		background-color: rgba(255, 255, 255, 0.97);
 		bottom: inherit;
-		top: 0;
 		height: 50px;
 		line-height: 50px;
+		position: fixed;
+		top: 0;
 	}
 }
 
-.site-navigation {
-	float: right;	
+.navigation-site {
+	float: right;
 
 	h3 { display: none; }
 
 	ul {
-		list-style-type: none;
 		display: table;
-		table-layout: fixed;
+		list-style-type: none;
 		margin: 0;
+		table-layout: fixed;
 	}
 
-	li {
-		display: table-cell;
-		padding: 0 20px;
-		padding: 0 2rem;
+	li { display: table-cell; }
+
+	a {
+		//background-color: pink;
+		display: inherit;
+		height: 100%;
+		// Add mixin
+		padding: 0 30px;
+		padding: 0 3rem;
+		width: 100%;
+		color: #eee;
+		text-decoration: none;
 	}
 
+	&.sticky {
+		a { color: green; }
+	}
 }
 
+// Section - Home
+// ===========================================================
+.home-section {
+		.clearfix;
+		background-attachment: fixed;  
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: '';
+		display: block;
+		height: 100%;
 
+	&:after {
+		.opacity(0.85);
+		content:'';
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
 
+	
+	&.paso {
+		background-image: url("../images/bg-paso.jpg");
+		&:after { background-color: #005591; }
+	}
+	
+	&.ensayo {
+		background-image: url("../images/bg-ensayo.jpg");
+		&:after { background-color: green; }
+	}
+	
+	span {
+		color: #fff;
+		left: 50%;
+		position: absolute;
+		text-align: center;
+		top: 42%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		z-index: 1;
+	}
+
+	h3 {
+		font-size: 50px;
+		font-size: 5rem;
+		line-height: 50px;
+		line-height: 5rem;
+		margin: 0;
+	}
+	
+
+}
 
 
 
@@ -106,11 +176,3 @@ header {
 	a { outline: none; }
 }
 
-
-// Section - Home
-// ===========================================================
-#home {
-	background-color: #333;
-
-	.clearfix;
-}
