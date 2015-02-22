@@ -21,7 +21,8 @@ html {
 body {
 	background-color: @body-bg;
 	color: @text-color;
-	font-family: @font-family-sans-serif;
+	font-family: "Raleway";
+	font-weight: 400;
 	// Add mixin
 	// .clc-once(font-size, 16);
 	font-size: 16px;
@@ -32,6 +33,10 @@ body {
 }
 
 h1 { .visuallyhidden; }
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
 
 
 // Header & Navigation
@@ -43,8 +48,8 @@ h1 { .visuallyhidden; }
 	border: none;
 	bottom: 0;
 	color: #fff;
-	height: 80px;
-	line-height: 80px;
+	height: 70px;
+	line-height: 70px;
 	margin: 0;	
 	position: absolute;
 	// Add mixin
@@ -54,12 +59,21 @@ h1 { .visuallyhidden; }
 
 	&.sticky {
 		//mixin
-		background-color: rgba(255, 255, 255, 0.97);
+		background-color: rgb(255, 255, 255, 0.97);
 		bottom: inherit;
 		height: 50px;
 		line-height: 50px;
 		position: fixed;
 		top: 0;
+	}
+}
+
+.logo-link {
+	display: inline-block;
+	margin-left: 20px;
+	img {
+		vertical-align: middle; 
+		height: 40px;
 	}
 }
 
@@ -85,19 +99,40 @@ h1 { .visuallyhidden; }
 		padding: 0 30px;
 		padding: 0 3rem;
 		width: 100%;
-		color: #eee;
+		color: #fff;
+		opacity: 0.5;
 		text-decoration: none;
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		font-weight: 500;
+		transition: color 0.2s linear 0s;
+		font-size: 14px;
+
+		&.active { color: green !important; opacity: 1; }
+
+		&:hover {
+			opacity: 1;
+		}
 	}
 
 	&.sticky {
-		a { color: green; }
+		a {
+			color: #999; 
+			&:hover { color: green; }
+		}
 	}
 }
 
-// Section - Home
+// Content
 // ===========================================================
-.home-section {
-		.clearfix;
+.section-site {
+	.clearfix;
+	height: 650px;
+	padding: 0 5%;
+}
+
+// Section - Home
+.home {
 		background-attachment: fixed;  
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -115,7 +150,6 @@ h1 { .visuallyhidden; }
 		top: 0;
 		width: 100%;
 	}
-
 	
 	&.paso {
 		background-image: url("../images/bg-paso.jpg");
@@ -127,7 +161,7 @@ h1 { .visuallyhidden; }
 		&:after { background-color: green; }
 	}
 	
-	span {
+	blockquote {
 		color: #fff;
 		left: 50%;
 		position: absolute;
@@ -136,43 +170,29 @@ h1 { .visuallyhidden; }
 		transform: translate(-50%, -50%);
 		width: 100%;
 		z-index: 1;
+		margin: 0;
 	}
 
-	h3 {
+	p {
 		font-size: 50px;
 		font-size: 5rem;
 		line-height: 50px;
 		line-height: 5rem;
 		margin: 0;
+		font-weight: 100;
+		padding: 0 10%;
 	}
-	
+
+	cite a {
+		color: #fff;
+		display: block;
+		font-size: 11px;
+		margin-top: 10px;
+		text-decoration: none;
+		text-transform: uppercase;
+		opacity: 0.7;
+
+		&:hover { text-decoration: underline; }
+	}
 
 }
-
-
-
-// Navbar
-// ===========================================================
-.navbar {	
-	/*.background(#fff,0.9);*/
-	background: transparent; 
-	border: none;
-	border-radius: 0;
-	color: #fff;
-	margin: 0;	
-	width: 100%;
-	z-index: 5;
-	
-	&.affix {
-		.background-white(0.9);
-		.box-shadow-black(0,5,10,0.02);
-	}
-		
-	&.affix-top {
-		bottom: 0;
-		position: absolute;		
-	}
-	
-	a { outline: none; }
-}
-

@@ -5,16 +5,7 @@
 		<title>Site Title</title>
 
 		<!-- Styles -->
-		<link href="css/app.css" rel="stylesheet" type='text/css'>
-		<!--link href="css/main.css" rel="stylesheet" type='text/css'>
-		<link href="css/navigation.css" rel="stylesheet" type='text/css'>
-		<link href="css/modules.css" rel="stylesheet" type='text/css'>
-		<link href="css/main-responsive.css" rel="stylesheet" type='text/css'>
-		<link href="css/navigation-responsive.css" rel="stylesheet" type='text/css'>
-		<link href="css/modules-responsive.css" rel="stylesheet" type='text/css'-->
-
-		<!-- Fonts -->
-		<link href="css/core/font-awesome.css" rel='stylesheet' type='text/css'>
+		<link href="css/main.css" rel="stylesheet" type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900' rel='stylesheet' type='text/css'>
 
 	</head>
@@ -22,14 +13,14 @@
 
 		<header class="header-site" id="header-site">
 			<h1>Portfolio de Miguel Ángel Moyá</h1>
-			<a href="#home" title="Return to the homepage" id="logo">
-				<img src="#" alt="Site Name Home Page" />
+			<a class="logo-link" href="#home" title="Return to the homepage">
+				<img src="http://gumbyframework.com/img/gumby_mainlogo.png" alt="Site Name Home Page" />
 			</a>
 
 			<nav role="navigation" class="navigation-site" id="navigation-site">
 				<h3>Site Navigation</h3>
 				<ul class="clearfix">
-					<li class="active"><a href="#about" title="Sobre mi">Sobre mi</a></li>
+					<li><a href="#about" title="Sobre mi">Sobre mi</a></li>
 					<li><a href="#manifiesto" title="Manifiesto">Manifiesto</a></li>
 					<li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
 					<li><a href="#" title="Portfolio">Blog</a></li>
@@ -39,13 +30,16 @@
 		</header>
 
 		<!-- Home -->
-		<section id="home" class="home-section">
-			<span><h3> Morbi eu risus rutrum diam facilisis fermentum. Aenean vel nulla est.</h3></span>
+		<section class="section-site home" id="home">
+			<blockquote>
+				<p>Con los sueños te inspiras, con las metas te guías y con los objetivos haces.</p> 
+				<cite><a href="#" target="blank" title="Alberto Pena Think Wasabi">Alberto Pena</a></cite>
+			</blockquote>
 		</section>
 		
 		<!-- About -->
-		<section class="module" id="about" style="background-color: #eee;">
-			<p> Morbi eu risus rutrum diam facilisis fermentum. Aenean vel nulla est. Donec a odio eget felis venenatis tincidunt. Nunc convallis nunc quis urna sodales mattis. Cras blandit consectetur odio, sodales tincidunt odio posuere non. Sed lacinia ligula vel nibh fringilla, sed ullamcorper mi pharetra. Curabitur ultricies, leo sed feugiat luctus, ipsum turpis ultricies sapien, a gravida sem diam ut velit. Vivamus tristique ante at tellus suscipit, eget cursus diam gravida. Mauris nisi augue, lacinia et egestas vel, ultrices in sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris consectetur mollis enim. Morbi mollis dolor erat. Duis vitae sapien quam. Fusce vestibulum mauris purus, ut aliquet nibh eleifend et.
+		<section class="section-site about" id="about" style="background-color: #eee;">
+			<p>About Morbi eu risus rutrum diam facilisis fermentum. Aenean vel nulla est. Donec a odio eget felis venenatis tincidunt. Nunc convallis nunc quis urna sodales mattis. Cras blandit consectetur odio, sodales tincidunt odio posuere non. Sed lacinia ligula vel nibh fringilla, sed ullamcorper mi pharetra. Curabitur ultricies, leo sed feugiat luctus, ipsum turpis ultricies sapien, a gravida sem diam ut velit. Vivamus tristique ante at tellus suscipit, eget cursus diam gravida. Mauris nisi augue, lacinia et egestas vel, ultrices in sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris consectetur mollis enim. Morbi mollis dolor erat. Duis vitae sapien quam. Fusce vestibulum mauris purus, ut aliquet nibh eleifend et.
 
 			Sed sed bibendum nisl. Duis dolor nulla, congue at odio et, rhoncus adipiscing est. Ut imperdiet nibh mauris, ut pharetra risus scelerisque eget. In adipiscing metus eu arcu adipiscing aliquam. Nulla eu convallis dui. Donec ornare non urna sed rutrum. Suspendisse id justo accumsan, auctor mauris et, consectetur mauris. Fusce dolor nibh, pulvinar eget cursus in, rutrum a enim. Curabitur aliquet mauris vitae turpis aliquet accumsan. Pellentesque orci metus, interdum a vehicula faucibus, varius et libero. Morbi vestibulum facilisis eros, ut accumsan odio porttitor vel.
 
@@ -54,8 +48,8 @@
 		</section>
 		
 		<!-- Manifiesto -->
-		<section class="module" id="manifiesto" style="background-color: #ccc;">
-			<p> Morbi eu risus rutrum diam facilisis fermentum. Aenean vel nulla est. Donec a odio eget felis venenatis tincidunt. Nunc convallis nunc quis urna sodales mattis. Cras blandit consectetur odio, sodales tincidunt odio posuere non. Sed lacinia ligula vel nibh fringilla, sed ullamcorper mi pharetra. Curabitur ultricies, leo sed feugiat luctus, ipsum turpis ultricies sapien, a gravida sem diam ut velit. Vivamus tristique ante at tellus suscipit, eget cursus diam gravida. Mauris nisi augue, lacinia et egestas vel, ultrices in sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris consectetur mollis enim. Morbi mollis dolor erat. Duis vitae sapien quam. Fusce vestibulum mauris purus, ut aliquet nibh eleifend et.
+		<section class="section-site manifiesto" id="manifiesto" style="background-color: #ccc;">
+			<p>Manifiesto Morbi eu risus rutrum diam facilisis fermentum. Aenean vel nulla est. Donec a odio eget felis venenatis tincidunt. Nunc convallis nunc quis urna sodales mattis. Cras blandit consectetur odio, sodales tincidunt odio posuere non. Sed lacinia ligula vel nibh fringilla, sed ullamcorper mi pharetra. Curabitur ultricies, leo sed feugiat luctus, ipsum turpis ultricies sapien, a gravida sem diam ut velit. Vivamus tristique ante at tellus suscipit, eget cursus diam gravida. Mauris nisi augue, lacinia et egestas vel, ultrices in sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris consectetur mollis enim. Morbi mollis dolor erat. Duis vitae sapien quam. Fusce vestibulum mauris purus, ut aliquet nibh eleifend et.
 
 			Sed sed bibendum nisl. Duis dolor nulla, congue at odio et, rhoncus adipiscing est. Ut imperdiet nibh mauris, ut pharetra risus scelerisque eget. In adipiscing metus eu arcu adipiscing aliquam. Nulla eu convallis dui. Donec ornare non urna sed rutrum. Suspendisse id justo accumsan, auctor mauris et, consectetur mauris. Fusce dolor nibh, pulvinar eget cursus in, rutrum a enim. Curabitur aliquet mauris vitae turpis aliquet accumsan. Pellentesque orci metus, interdum a vehicula faucibus, varius et libero. Morbi vestibulum facilisis eros, ut accumsan odio porttitor vel.
 
@@ -64,8 +58,8 @@
 		</section>
 		
 		<!-- Portfolio -->
-		<section class="module" id="portfolio" style="background-color: #eee;">
-			<p> Morbi eu risus rutrum diam facilisis fermentum. Aenean vel nulla est. Donec a odio eget felis venenatis tincidunt. Nunc convallis nunc quis urna sodales mattis. Cras blandit consectetur odio, sodales tincidunt odio posuere non. Sed lacinia ligula vel nibh fringilla, sed ullamcorper mi pharetra. Curabitur ultricies, leo sed feugiat luctus, ipsum turpis ultricies sapien, a gravida sem diam ut velit. Vivamus tristique ante at tellus suscipit, eget cursus diam gravida. Mauris nisi augue, lacinia et egestas vel, ultrices in sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris consectetur mollis enim. Morbi mollis dolor erat. Duis vitae sapien quam. Fusce vestibulum mauris purus, ut aliquet nibh eleifend et.
+		<section class="section-site portfolio" id="portfolio" style="background-color: #eee;">
+			<p>Portfolio Morbi eu risus rutrum diam facilisis fermentum. Aenean vel nulla est. Donec a odio eget felis venenatis tincidunt. Nunc convallis nunc quis urna sodales mattis. Cras blandit consectetur odio, sodales tincidunt odio posuere non. Sed lacinia ligula vel nibh fringilla, sed ullamcorper mi pharetra. Curabitur ultricies, leo sed feugiat luctus, ipsum turpis ultricies sapien, a gravida sem diam ut velit. Vivamus tristique ante at tellus suscipit, eget cursus diam gravida. Mauris nisi augue, lacinia et egestas vel, ultrices in sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris consectetur mollis enim. Morbi mollis dolor erat. Duis vitae sapien quam. Fusce vestibulum mauris purus, ut aliquet nibh eleifend et.
 
 			Sed sed bibendum nisl. Duis dolor nulla, congue at odio et, rhoncus adipiscing est. Ut imperdiet nibh mauris, ut pharetra risus scelerisque eget. In adipiscing metus eu arcu adipiscing aliquam. Nulla eu convallis dui. Donec ornare non urna sed rutrum. Suspendisse id justo accumsan, auctor mauris et, consectetur mauris. Fusce dolor nibh, pulvinar eget cursus in, rutrum a enim. Curabitur aliquet mauris vitae turpis aliquet accumsan. Pellentesque orci metus, interdum a vehicula faucibus, varius et libero. Morbi vestibulum facilisis eros, ut accumsan odio porttitor vel.
 
@@ -74,8 +68,8 @@
 		</section>
 		
 		<!-- Contact -->
-		<section class="module" id="contact" style="background-color: #ccc;">
-			<p> Morbi eu risus rutrum diam facilisis fermentum. Aenean vel nulla est. Donec a odio eget felis venenatis tincidunt. Nunc convallis nunc quis urna sodales mattis. Cras blandit consectetur odio, sodales tincidunt odio posuere non. Sed lacinia ligula vel nibh fringilla, sed ullamcorper mi pharetra. Curabitur ultricies, leo sed feugiat luctus, ipsum turpis ultricies sapien, a gravida sem diam ut velit. Vivamus tristique ante at tellus suscipit, eget cursus diam gravida. Mauris nisi augue, lacinia et egestas vel, ultrices in sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris consectetur mollis enim. Morbi mollis dolor erat. Duis vitae sapien quam. Fusce vestibulum mauris purus, ut aliquet nibh eleifend et.
+		<section class="section-site contact" id="contact" style="background-color: #ccc;">
+			<p>Contact Morbi eu risus rutrum diam facilisis fermentum. Aenean vel nulla est. Donec a odio eget felis venenatis tincidunt. Nunc convallis nunc quis urna sodales mattis. Cras blandit consectetur odio, sodales tincidunt odio posuere non. Sed lacinia ligula vel nibh fringilla, sed ullamcorper mi pharetra. Curabitur ultricies, leo sed feugiat luctus, ipsum turpis ultricies sapien, a gravida sem diam ut velit. Vivamus tristique ante at tellus suscipit, eget cursus diam gravida. Mauris nisi augue, lacinia et egestas vel, ultrices in sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris consectetur mollis enim. Morbi mollis dolor erat. Duis vitae sapien quam. Fusce vestibulum mauris purus, ut aliquet nibh eleifend et.
 
 			Sed sed bibendum nisl. Duis dolor nulla, congue at odio et, rhoncus adipiscing est. Ut imperdiet nibh mauris, ut pharetra risus scelerisque eget. In adipiscing metus eu arcu adipiscing aliquam. Nulla eu convallis dui. Donec ornare non urna sed rutrum. Suspendisse id justo accumsan, auctor mauris et, consectetur mauris. Fusce dolor nibh, pulvinar eget cursus in, rutrum a enim. Curabitur aliquet mauris vitae turpis aliquet accumsan. Pellentesque orci metus, interdum a vehicula faucibus, varius et libero. Morbi vestibulum facilisis eros, ut accumsan odio porttitor vel.
 
