@@ -1,9 +1,90 @@
-/* ===========================================================
- * LESS Mixins
- * Lots of Love Mixins library for LESS
- * =========================================================== */
+// ===========================================================
+// LESS Mixins
+// Lots of Love Mixins library for LESS
+// ===========================================================
 
- // Clearfix
+// ===========================================================
+// Vasa Mixins
+// ===========================================================
+
+// Kerning
+// --------------------------------------------------
+.kerning_v1() {
+  -moz-font-feature-settings: "calt" 1, "liga" 1, "clig" 1, "kern" 1;
+  -moz-font-feature-settings: "calt=1, liga=1, clig=1, kern=1";
+  -moz-osx-font-smoothing: grayscale;
+  -ms-font-feature-settings: "calt", "liga", "clig", "kern";
+  -ms-text-size-adjust: 100%;
+  -o-font-feature-settings: "calt", "liga", "clig", "kern";
+  -webkit-font-feature-settings: "calt", "liga", "clig", "kern";
+  -webkit-font-smoothing: antialiased;
+//-webkit-font-smoothing: subpixel-antialiased;
+  -webkit-text-size-adjust: 100%;
+//-webkit-text-stroke: 0.6px;
+  font-feature-settings: "calt", "liga", "clig", "kern";
+  font-size: 100%;
+// text-rendering: optimizeLegibility;
+}
+
+// Fonts
+// --------------------------------------------------
+#font {
+  .short(@family, @size, @style, @weight) {
+    font-family: @family;
+    .clcOnce(font-size, @size);
+    font-style: @style;
+    font-weight: @weight;
+  }
+}
+
+// Margins
+// --------------------------------------------------
+#margin {
+  .all(@all) {
+    .clcOnce(margin, @all);
+  }
+  .clock(@top, @right, @bottom, @left) {
+    .clc(margin, @top, @right, @bottom, @left);
+  }
+  .pair(@tb, @rl) {
+    #margin > .clock(@tb, @rl, @tb, @rl);
+  }
+}
+
+// Paddings
+// --------------------------------------------------
+#padding {
+  .all(@all) {
+    .clcOnce(padding, @all);
+  }
+  .clock(@top, @right, @bottom, @left) {
+    .clc(padding, @top, @right, @bottom, @left);
+  }
+  .pair(@tb, @rl) {
+    #padding > .clock(@tb, @rl, @tb, @rl);
+  }
+}
+
+// Calculator
+// Works with: font-size, height, line-height,
+// margin, padding and width.
+// --------------------------------------------------
+.clcOnce(@property, @u) {
+  &when (isnumber(@u)) {
+    @{property}: unit(@u, px);
+    @{property}: unit((@u / 10), rem);
+  }
+  &when (isstring(@u)) {
+    @{property}: @u;
+  }
+}
+
+.clc(@property, @t, @r, @b, @l) {
+  @{property}: unit(@t, px) unit(@r, px) unit(@b, px) unit(@l, px);
+  @{property}: unit((@t / 10), rem) unit((@r / 10), rem) unit((@b / 10), rem) unit((@l / 10), rem);
+}
+
+// Clearfix
 // --------------------------------------------------
 // For clearing floats like a boss h5bp.com/q
 .clearfix() {
@@ -16,6 +97,99 @@
     clear: both;
   }
 }
+
+// Make list flat
+// --------------------------------------------------
+.flatList() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Placeholder color
+// --------------------------------------------------
+.placeholderColor(@color) {
+  &:-moz-placeholder { color: @color; /* Mozilla Firefox 4 to 18 */ }
+  &:-ms-input-placeholder { color: @color; /* Internet Explorer 10+ */ }
+  &::-moz-placeholder { color: @color; /* Mozilla Firefox 19+ */ }
+  &::-webkit-input-placeholder { color: @color; /* WebKit browsers */ }
+}
+
+// Gradients
+// --------------------------------------------------
+#gradient {
+  // Horizontal gradient, from left to right
+  //
+  // Creates two color stops, start and end, by specifying a color and position for each color stop.
+  // Color stops are not available in IE9 and below.
+  .horizontal(@start-color: #555; @end-color: #333; @start-percent: 0; @end-percent: 100%) {
+    background-image: -webkit-linear-gradient(left, @start-color @start-percent, @end-color @end-percent); // Safari 5.1-6, Chrome 10+
+    background-image: -o-linear-gradient(left, @start-color @start-percent, @end-color @end-percent); // Opera 12
+    background-image: linear-gradient(to right, @start-color @start-percent, @end-color @end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+    background-repeat: repeat-x;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",argb(@start-color),argb(@end-color))); // IE9 and down
+  }
+  // Vertical gradient, from top to bottom
+  //
+  // Creates two color stops, start and end, by specifying a color and position for each color stop.
+  // Color stops are not available in IE9 and below.
+  .vertical(@start-color: #555; @end-color: #333; @start-percent: 0; @end-percent: 100%) {
+    background-image: -webkit-linear-gradient(top, @start-color @start-percent, @end-color @end-percent); // Safari 5.1-6, Chrome 10+
+    background-image: -o-linear-gradient(top, @start-color @start-percent, @end-color @end-percent); // Opera 12
+    background-image: linear-gradient(to bottom, @start-color @start-percent, @end-color @end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+    background-repeat: repeat-x;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down
+  }
+}
+
+.resetFilter() {filter: e(%("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));}
+
+// Transform
+// --------------------------------------------------
+.transform(@params) {
+  -webkit-transform: @params;
+  transform: @params;
+}
+
+// Flip things horizontally
+// --------------------------------------------------
+.flipH() {
+  -moz-transform: scaleX(-1);
+  -ms-filter: "FlipH";
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  filter: FlipH;
+  transform: scaleX(-1);
+}
+
+// Truncate line
+// --------------------------------------------------
+.truncateLine(@width) {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: unit(@width, %);
+}
+
+// Disabled
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+// --------------------------------------------------
+.visuallyhidden() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// ===========================================================
+// Fin Vasa Mixins
+// ===========================================================
+
 
 .font-family-base {
 	font-family: @font-family-base;
