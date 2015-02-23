@@ -12,7 +12,6 @@
 // Begin Styles
 // ===========================================================
 
-
 // General
 // ===========================================================
 html {
@@ -22,8 +21,10 @@ html {
 body {
 	background-color: @body-bg;
 	color: @text-color;
-	font-family: @font-family-sans-serif;
+	font-family: "Raleway";
+	font-weight: 400;
 	// Add mixin
+	// .clc-once(font-size, 16);
 	font-size: 16px;
 	font-size: 1.6rem;
 	// Add mixin
@@ -31,86 +32,167 @@ body {
 	line-height: 2.6rem;
 }
 
-// Navigation
-header {
+h1 { .visuallyhidden; }
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
+
+
+// Header & Navigation
+// ===========================================================
+.header-site {
 	//background: transparent; 
-	background-color: yellow;
-	height: 80px;
-	line-height: 80px;
-	border: none;
+	//background-color: yellow;
 	border-radius: 0;
+	border: none;
+	bottom: 0;
 	color: #fff;
+	height: 70px;
+	line-height: 70px;
 	margin: 0;	
+	position: absolute;
+	// Add mixin
+	transition: all 0.3s ease 0s;
 	width: 100%;
 	z-index: 5;
-	position: absolute;
-	bottom: 0;
-	transition: height 0.3s ease 0s;
 
 	&.sticky {
-		position: fixed;
+		//mixin
+		background-color: rgb(255, 255, 255, 0.97);
 		bottom: inherit;
-		top: 0;
 		height: 50px;
 		line-height: 50px;
+		position: fixed;
+		top: 0;
 	}
 }
 
-.site-navigation {
-	float: right;	
+.logo-link {
+	display: inline-block;
+	margin-left: 20px;
+	img {
+		vertical-align: middle; 
+		height: 40px;
+	}
+}
+
+.navigation-site {
+	float: right;
 
 	h3 { display: none; }
 
 	ul {
-		list-style-type: none;
 		display: table;
+		list-style-type: none;
+		margin: 0;
 		table-layout: fixed;
+	}
+
+	li { display: table-cell; }
+
+	a {
+		//background-color: pink;
+		display: inherit;
+		height: 100%;
+		// Add mixin
+		padding: 0 30px;
+		padding: 0 3rem;
+		width: 100%;
+		color: #fff;
+		opacity: 0.5;
+		text-decoration: none;
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		font-weight: 500;
+		transition: color 0.2s linear 0s;
+		font-size: 14px;
+
+		&.active { color: green !important; opacity: 1; }
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&.sticky {
+		a {
+			color: #999; 
+			&:hover { color: green; }
+		}
+	}
+}
+
+// Content
+// ===========================================================
+.section-site {
+	.clearfix;
+	height: 650px;
+	padding: 0 5%;
+}
+
+// Section - Home
+.home {
+		background-attachment: fixed;  
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: '';
+		display: block;
+		height: 100%;
+
+	&:after {
+		.opacity(0.85);
+		content:'';
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	
+	&.paso {
+		background-image: url("../images/bg-paso.jpg");
+		&:after { background-color: #005591; }
+	}
+	
+	&.ensayo {
+		background-image: url("../images/bg-ensayo.jpg");
+		&:after { background-color: green; }
+	}
+	
+	blockquote {
+		color: #fff;
+		left: 50%;
+		position: absolute;
+		text-align: center;
+		top: 42%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		z-index: 1;
 		margin: 0;
 	}
 
-	li {
-		display: table-cell;
-		padding: 0 20px;
-		padding: 0 2rem;
+	p {
+		font-size: 50px;
+		font-size: 5rem;
+		line-height: 50px;
+		line-height: 5rem;
+		margin: 0;
+		font-weight: 100;
+		padding: 0 10%;
 	}
 
-}
+	cite a {
+		color: #fff;
+		display: block;
+		font-size: 11px;
+		margin-top: 10px;
+		text-decoration: none;
+		text-transform: uppercase;
+		opacity: 0.7;
 
-
-
-
-
-
-// Navbar
-// ===========================================================
-.navbar {	
-	/*.background(#fff,0.9);*/
-	background: transparent; 
-	border: none;
-	border-radius: 0;
-	color: #fff;
-	margin: 0;	
-	width: 100%;
-	z-index: 5;
-	
-	&.affix {
-		.background-white(0.9);
-		.box-shadow-black(0,5,10,0.02);
+		&:hover { text-decoration: underline; }
 	}
-		
-	&.affix-top {
-		bottom: 0;
-		position: absolute;		
-	}
-	
-	a { outline: none; }
-}
 
-
-// Section - Home
-// ===========================================================
-#home {
-	background-color: #333;
-
-	.clearfix;
 }
